@@ -21,9 +21,8 @@ mongoose
   .then(() => console.log("MongoDB Connected"))
   .catch((err) => console.log(err));
 
-// Use the transaction routes (ensure the correct import)
-app.use("/api/transactions", transactionRoutes); // This will work if the route file is correct
-// app.use("/api/statistics", statsRoutes); // If you have other stats routes
+app.use("/api/transactions", transactionRoutes);
+// app.use("/api/statistics", statsRoutes);
 
 const PORT = process.env.PORT || 5000;
 
