@@ -1,5 +1,3 @@
-// backend/seed.js
-// const fetch = require("node-fetch");
 const mongoose = require("mongoose");
 const axios = require("axios");
 const Transaction = require("./models/Transaction");
